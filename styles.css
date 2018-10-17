@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  padding: 20px;
+}
+
+
+h3 {
+  margin: 0;
+}
+
+h4 {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.character {
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+  display: inline-block;
+  background-color: whitesmoke;
+}
+
+.enemy {
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+  display: inline-block;
+  background-color: whitesmoke;
+}
+
+button {
+  display: block;
+  margin-top: 10px;
+  width: 200px;
+  height: 50px;
+}
+
+.character-health {
+  width: 180px;
+  border: 1px solid black;
+  background-color: red;
+  margin-top: 10px;
+}
+
+.character-health div {
+  width: 100%;
+  height: 20px;
+  background-color: green;
+}
+
+.enemy-health {
+  width: 180px;
+  border: 1px solid black;
+  background-color: black;
+  margin-top: 10px;
+}
+
+.enemy-health div {
+  width: 100%;
+  height: 20px;
+  background-color: red;
+}

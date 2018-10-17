@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Vue JS Practice</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+
+</head>
+<body>
+  <div id="vue-app">
+    <div class="character">
+      <h3>{{ character.name }}</h3>
+      <h4>Health</h4>
+      <div class="character-health">
+        <div :style="getCharacterHealthPercentage"></div>
+      </div>
+    </div>
+    <div class="enemy">
+      <h3>{{ enemy.name }}</h3>
+      <h4>Health</h4>
+      <div class="enemy-health">
+        <div :style="getEnemyHealthPercentage"></div>
+      </div>
+    </div>
+
+    <button @click="attack" v-show="attackButton">Attack</button>
+    <p v-show="characterAttacked">{{character.name}} attacks for {{characterDamage}}</p>
+    <p v-show="enemyAttacked">{{enemy.name}} attacks for {{enemyDamage}}</p>
+    <p v-show="characterWon">{{ character.name }} has defeated {{ enemy.name }}</p>
+    <p v-show="enemyWon">{{ enemy.name }} has defeated {{ character.name }}</p>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
